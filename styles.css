@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-html, body
+html, body /*make sure to add stuff when you do crew pages and shit, this is what removes overflowing */
 {
   overflow-x: hidden;
 }
