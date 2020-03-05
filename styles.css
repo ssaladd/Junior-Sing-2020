@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+html
+{
+  overflow-x: hidden;
+}
+
 /*
  * Comforta
 ================================================================================ */
@@ -135,17 +140,21 @@ html, body
 
 .crews
 {
-
+  padding-top: 52px;
 }
 
 .crews h1
 {
-  
+  color: #f9f9f9;
+  font-family: "montserrat-regular";
 }
 
 .crews p
 {
-  
+  color: #f9f9f9;
+  font-size: 20px;
+  font-family: "montserrat-regular";
+  padding-bottom: 10px;
 }
 
 .trailer-button
