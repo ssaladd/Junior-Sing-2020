@@ -1,0 +1,386 @@
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+ * Comforta
+================================================================================ */
+@font-face {
+  font-family: "comforta-regular";
+  src: url("assets/comforta/Comfortaa-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "comforta-bold";
+  src: url("assets/comforta/Comfortaa-Bold.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "comforta-medium";
+  src: url("assets/comforta/Comfortaa-Medium.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "comforta-light";
+  src: url("assets/comforta/Comfortaa-Light.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*
+ * Montserrat
+================================================================================ */
+@font-face {
+  font-family: "montserrat-regular";
+  src: url("assets/montserrat/montserrat-regular-webfont.woff2") format("woff2"), 
+       url("assets/montserrat/montserrat-regular-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "montserrat-bold";
+  src: url("assets/montserrat/montserrat-bold-webfont.woff2") format("woff2"), 
+       url("assets/montserrat/montserrat-bold-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*
+ * Nasalization
+================================================================================ */
+@font-face {
+  font-family: "nasal";
+  src: url("assets/nasalization-rg.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+html, body 
+{
+  height: 100%;
+  background-color: #f9f9f9;
+}
+
+.top 
+{
+  background-image: url("assets/theatre-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 86%;
+  border: 1px solid black;
+}
+
+.about p
+{
+  color: #f9f9f9;
+  font-size: 20px;
+  font-family: "comforta-bold";
+}
+
+.about h1
+{
+  line-height: 0px;
+  margin-top: -30px;
+  margin-bottom: 24px;
+  color: #f9f9f9;
+  font-family: "montserrat-regular";
+}
+
+.bottom
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  border: 1px solid black;
+}
+
+.row
+{
+  width: 100%;
+}
+
+.col-1
+{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.sing
+{
+  padding-top: 120px;
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 82px;
+  color: #f9f9f9;
+  line-height: 3.6rem;
+}
+
+.twentytwenty
+{
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 42px;
+  color: #f9f9f9;
+}
+
+.crews
+{
+
+}
+
+.crews h1
+{
+  
+}
+
+.crews p
+{
+  
+}
+
+.trailer-button
+{
+  cursor: pointer;
+  border: none;
+  padding-top: 1px;
+  display: inline-block;
+  font-family: "montserrat-regular";
+  height: 32px;
+  width: 86px;
+  background-color: #f9f9f9;
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+  border-radius: 6px;
+  transition: all .25s ease-in-out;
+}
+
+.trailer-button:hover
+{
+  cursor: pointer;
+  border: none;
+  padding-top: 1px;
+  display: inline-block;
+  font-family: "montserrat-regular";
+  height: 32px;
+  width: 86px;
+  background-color: #f9f9f9;
+  color: #ffbf00;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+  border-radius: 6px;
+}
+
+.trailer 
+{
+  padding-top: 52px;
+}
+
+.trailer p
+{
+  color: #f9f9f9;
+  font-size: 20px;
+  font-family: "montserrat-regular";
+  padding-bottom: 10px;
+}
+
+.trailer h1
+{
+  font-family: "montserrat-regular";
+}
+
+.trailer-container
+{
+  padding-top: 20px;
+  margin: auto;
+  border-radius: 6px;
+  width: 92%;
+  height: 420px;
+  color: black;
+  background-color: #f9f9f9;
+}
+
+/* header */
+.treble
+{
+  top: -5px;
+  position: absolute;
+  left: 3%;
+  height: 120px;
+  width: 120px;
+}
+
+.top .sheet-music-button
+{
+  cursor: pointer;
+  font-family: "montserrat-regular", sans-serif;
+  font-size: 18px;
+  display: block;
+  float: left;
+  width: 15%;
+  border: none;
+  background-color: #f9f9f9;
+  transition: all .25s ease-in-out;
+}
+
+.top .sheet-music-button:hover
+{
+  cursor: pointer;
+  font-family: "montserrat-regular", sans-serif;
+  font-size: 18px;
+  display: block;
+  float: left;
+  width: 15%;
+  border: none;
+  color: #ffbf00;
+  background-color: #f9f9f9;
+}
+
+.top .sheet-music-container
+{
+  padding: 8px 8px 8px 8px;
+  border-radius: 8px;
+  position: relative;
+  width: 75%;
+  height: 105px;
+  margin: auto;
+  margin-top: 15px;
+  background-color: #f9f9f9;
+}
+
+.sheet-music-line-long
+{
+
+  width: 70%;
+  height:2px;
+  background-color: black;
+  margin: auto;
+  margin-bottom: 3px;
+  margin-top: 3px ;
+}
+
+.sheet-music-line-short
+{
+  width: 20%;
+  height: 2px;
+  background-color: black;
+  margin: auto;
+  margin-bottom: 7px;
+  margin-top: 7px ;
+}
+
+.top .sheet-music-line-long
+{
+  float: left;
+  display: block;
+  z-index: 2;
+  width: 100%;
+  height:3px;
+  background-color: black;
+  margin: auto;
+  margin-bottom: 7px;
+  margin-top: 7px ;
+}
+
+.top .sheet-music-line-short
+{
+  float: left;
+  display: block;
+  z-index: 2;
+  width: 20%;
+  height: 3px;
+  background-color: black;
+  margin: auto;
+  margin-bottom: 7px;
+  margin-top: 7px ;
+}
+
+/* slant */
+.diagonal {
+  z-index: 1;
+  padding: 3em;
+}
+.slant {
+  position: relative;
+  background: #ffbf00;
+  color: #fff;
+  text-align: center;
+}
+.slant:before {
+  position: absolute;
+  content:'';
+}
+.slant.diagonal {
+  background: #ffbf00;
+}
+.diagonal:before {
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  -webkit-transform-origin: 3% 0;
+  transform-origin: 0% 0%;
+  top: 0;
+  left: -0%;
+  z-index: -1;
+  width: 100%;
+  height: 75%;
+  background: inherit;
+}
+
+.other-diagonal {
+  z-index: 1;
+  padding: 1em;
+}
+.other-slant {
+  position: relative;
+  background: #ffbf00;
+  color: #fff;
+  text-align: center;
+}
+.other-slant:before {
+  position: absolute;
+  content:'';
+}
+.other-slant.other-diagonal {
+  background: #ffbf00;
+}
+.other-diagonal:before
+{
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  -webkit-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  top: 0;
+  right: 0%;
+  z-index: -1;
+  width: 110%;
+  height: 100%;
+  background: inherit;
+}
+
+.slant-2 
+{
+  position: relative;
+  background: black;
+  color: #fff;
+  text-align: center;
+}
+.slant-2:before {
+  position: absolute;
+  content:'';
+}
+.slant-2.diagonal {
+  background: black;
+}
+
