@@ -4,6 +4,7 @@
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link rel="stylesheet" type="text/css" href="side-bar.css">
         <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans&display=swap" rel="stylesheet">
+        <script src="smooth-scroll-16.1.2/dist/smooth-scroll.min.js"></script>
     </head> 
     
     <body>
@@ -47,9 +48,10 @@
             </div>
             <div class="row">
                 <div class="col-1">
-                    <button class="trailer-button">
+                    <a data-scroll href="#trailertarget"><button class="trailer-button">
                         TRAILER
                     </button>
+                </a>
                 </div>
             </div>
             
@@ -65,7 +67,7 @@
             </div>
             
             <div class="trailer">
-                <h1> TRAILER </h1>
+                <h1><a id="trailertarget">TRAILER </a> </h1>
                 <p>
                     Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,  <br />
                     Lorem ipsum dolor sit amet,Lorem ipsu
@@ -145,7 +147,9 @@
         <div class="slant-2 diagonal">
 
         </div>
-
+        <script>
+            var scroll = new SmoothScroll('a[href*="#"]');
+        </script>
     </body>
 
 </html>
