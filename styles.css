@@ -4,8 +4,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-html, body /*make sure to add stuff when you do crew pages and shit, this is what removes overflowing */
+/*when doing dropdown, make each entry its own line, with the thing like how it is already */
+html, body/*make sure to add stuff when you do crew pages and shit, this is what removes overflowing */
 {
   overflow-x: hidden;
 }
@@ -407,6 +407,7 @@ html, body
   background: #ffbf00;
   color: #fff;
   text-align: center;
+  
 }
 .other-slant:before {
   position: absolute;
