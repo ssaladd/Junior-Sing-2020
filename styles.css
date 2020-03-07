@@ -1,13 +1,17 @@
+/*
+ * necessary tags
+================================================================================ */
 * 
 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/*when doing dropdown, make each entry its own line, with the thing like how it is already */
-html, body/*make sure to add stuff when you do crew pages and shit, this is what removes overflowing */
+html, body
 {
   overflow-x: hidden;
+  height: 100%;
+  background-color: #f9f9f9;
 }
 
 /*
@@ -66,12 +70,85 @@ html, body/*make sure to add stuff when you do crew pages and shit, this is what
   font-weight: normal;
 }
 
-html, body 
+/*
+ * space and divisions
+================================================================================ */
+.spacer
 {
+  height: 20px;
+}
+.divider
+{
+  width: 50%;
+  height: 28px;
+  margin: auto;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.divider-2
+{
+  width: 50%;
+  height: 28px;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 32px;
+}
+.separator-right
+{
+  background-color: black;
   height: 100%;
-  background-color: #f9f9f9;
+  width: 42%;
+  float: left;
+  display: block;
+  clip-path: polygon(10% 30%, 100% 50%, 10% 70%, 0% 50%);
+}
+.separator-left
+{
+  background-color: black;
+  height: 100%;
+  width: 42%;
+  float: left;
+  display: block;
+  clip-path: polygon(90% 70%, 100% 50%, 90% 30%, 0% 50%);
+}
+.diamond-container
+{
+  padding-top: 4px;
+  margin: auto;
+  display: block;
+  float: left;
+  width: 6%;
+  height: 28px;
+}
+.diamond 
+{
+  background-color: black;
+  margin: auto;
+  z-index: 20;
+  height: 18px;
+  width: 18px;
+  transform: rotate(45deg);
+}
+.circle-container
+{
+  padding-top: 8px;
+  display: block;
+  float: left;
+  width: 4%;
+  height: 100%;
+}
+.circle
+{
+  width: 12px;
+  height: 12px;
+  margin: auto;
+  background-color: black;
+  clip-path: circle(50% at 50% 50%);
 }
 
+/*
+ * layout
+================================================================================ */
 .top 
 {
   background-image: url("assets/theatre-bg.jpg");
@@ -84,23 +161,6 @@ html, body
   height: 86%;
   border: 1px solid black;
 }
-
-.about p
-{
-  color: #f9f9f9;
-  font-size: 20px;
-  font-family: "comforta-bold";
-}
-
-.about h1
-{
-  line-height: 0px;
-  margin-top: -30px;
-  margin-bottom: 24px;
-  color: #f9f9f9;
-  font-family: "montserrat-regular";
-}
-
 .bottom
 {
   display: flex;
@@ -109,12 +169,10 @@ html, body
   height: 30%;
   border: 1px solid black;
 }
-
 .row
 {
   width: 100%;
 }
-
 .col-1
 {
   width: 100%;
@@ -122,6 +180,31 @@ html, body
   text-align: center;
 }
 
+/*
+ * about section
+================================================================================ */
+.about
+{
+  display: auto;
+}
+.about p
+{
+  color: black;
+  font-size: 20px;
+  font-family: "comforta-bold";
+}
+.about h1
+{
+  line-height: 0px;
+  margin-top: -30px;
+  margin-bottom: 24px;
+  color: black;
+  font-family: "montserrat-regular";
+}
+
+/*
+ * SING! text
+================================================================================ */
 .sing
 {
   padding-top: 120px;
@@ -130,7 +213,6 @@ html, body
   color: #f9f9f9;
   line-height: 3.6rem;
 }
-
 .twentytwenty
 {
   font-family: "montserrat-bold", sans-serif;
@@ -138,25 +220,25 @@ html, body
   color: #f9f9f9;
 }
 
+/*
+ * crews
+================================================================================ */
 .crews
 {
-  padding-top: 52px;
+  padding-top: 0px;
 }
-
 .crews h1
 {
-  color: #f9f9f9;
+  color: black;
   font-family: "montserrat-regular";
 }
-
 .crews p
 {
-  color: #f9f9f9;
+  color: black;
   font-size: 20px;
   font-family: "montserrat-regular";
   padding-bottom: 10px;
 }
-
 .crew-button
 {
   text-align: center;
@@ -171,7 +253,6 @@ html, body
   background-color: black;
   transition: all .25s ease-in-out;
 }
-
 .crew-button:hover
 {
   text-align: center;
@@ -185,7 +266,6 @@ html, body
   color: #ecc03d;
   background-color: black;
 }
-
 .crew-sheet-music-container
 {
   padding: 8px 8px 8px 8px;
@@ -198,6 +278,9 @@ html, body
   background-color: #f9f9f9;
 }
 
+/*
+ * trailer
+================================================================================ */
 .trailer-button
 {
   cursor: pointer;
@@ -215,7 +298,6 @@ html, body
   border-radius: 6px;
   transition: all .25s ease-in-out;
 }
-
 .trailer-button:hover
 {
   cursor: pointer;
@@ -232,25 +314,22 @@ html, body
   margin: auto;
   border-radius: 6px;
 }
-
 .trailer 
 {
-  padding-top: 52px;
+  display: auto;
 }
-
 .trailer p
 {
-  color: #f9f9f9;
+  color: black;
   font-size: 20px;
   font-family: "montserrat-regular";
   padding-bottom: 10px;
 }
-
 .trailer h1
 {
+  color: black; 
   font-family: "montserrat-regular";
 }
-
 .trailer-container
 {
   padding-top: 20px;
@@ -263,7 +342,9 @@ html, body
   background-color: #f9f9f9;
 }
 
-/* header */
+/*
+ * music icons
+================================================================================ */
 .treble
 {
   top: 0px;
@@ -272,12 +353,14 @@ html, body
   height: 120px;
   width: 120px;
 }
-
 .sharp
 {
   display: none;
 }
 
+/*
+ * header
+================================================================================ */
 .vertical-line-1
 {
   top: 16px;
@@ -287,7 +370,6 @@ html, body
   width: 6px;
   background-color: black;
 }
-
 .vertical-line-2
 {
   top: 16px;
@@ -297,7 +379,6 @@ html, body
   width: 2px;
   background-color: black;
 }
-
 .vertical-line-3
 {
   top: 16px;
@@ -307,7 +388,6 @@ html, body
   width: 2px;
   background-color: black;
 }
-
 .top .sheet-music-button
 {
   height: 20px;
@@ -321,7 +401,6 @@ html, body
   background-color: #f9f9f9;
   transition: all .25s ease-in-out;
 }
-
 .top .sheet-music-button:hover
 {
   height: 20px;
@@ -335,7 +414,6 @@ html, body
   color: #ecc03d;
   background-color: #f9f9f9;
 }
-
 .top .sheet-music-container
 {
   padding: 8px 16px 8px 16px;
@@ -347,12 +425,6 @@ html, body
   margin-top: 15px;
   background-color: #f9f9f9;
 }
-
-.spacer
-{
-  height: 20px;
-}
-
 .sheet-music-line-long
 {
 
@@ -363,7 +435,6 @@ html, body
   margin-bottom: 12px;
   margin-top: 12px ;
 }
-
 .sheet-music-line-short
 {
   width: 20%;
@@ -373,7 +444,6 @@ html, body
   margin-bottom: 7px;
   margin-top: 7px ;
 }
-
 .top .sheet-music-line-long
 {
   float: left;
@@ -386,7 +456,6 @@ html, body
   margin-bottom: 8px;
   margin-top: 8px ;
 }
-
 .top .sheet-music-line-short
 {
   float: left;
@@ -400,25 +469,35 @@ html, body
   margin-top: 8px ;
 }
 
-/* slant */
-.diagonal {
+/*
+ * layout
+================================================================================ */
+.diagonal 
+{
   z-index: 1;
   padding: 3em;
+  padding-top: 0px;
+  padding-left: 1em;
+  padding-right: 1em;
 }
-.slant {
+.slant 
+{
   position: relative;
   background: #ecc03d;
   color: #fff;
   text-align: center;
 }
-.slant:before {
+.slant:before 
+{
   position: absolute;
   content:'';
 }
-.slant.diagonal {
+.slant.diagonal 
+{
   background: #ecc03d;
 }
-.diagonal:before {
+.diagonal:before 
+{
   -webkit-transform: rotate(-3deg);
   transform: rotate(-3deg);
   -webkit-transform-origin: 3% 0;
@@ -430,26 +509,33 @@ html, body
   height: 75%;
   background: inherit;
 }
-
-/* slant */
-.first-diagonal {
+/*-*/
+.first-diagonal 
+{
   z-index: 1;
   padding: 3em;
+  padding-bottom: 32px;
+  padding-left: 1em;
+  padding-right: 1em;
 }
-.first-slant {
+.first-slant 
+{
   position: relative;
   background: #ecc03d;
   color: #fff;
   text-align: center;
 }
-.first-slant:before {
+.first-slant:before 
+{
   position: absolute;
   content:'';
 }
-.first-slant.first-diagonal {
-
+.first-slant.first-diagonal 
+{
+  display: auto;
 }
-.first-diagonal:before {
+.first-diagonal:before 
+{
   -webkit-transform: rotate(-3deg);
   transform: rotate(-3deg);
   -webkit-transform-origin: 3% 0;
@@ -460,30 +546,32 @@ html, body
   width: 120%;
   height: 75%;
   background-image: url(assets/overlay.png);
+  background-position: center 70%;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
 }
-
-
-/*-------------------------*/
-.other-diagonal {
+/*=*/
+.other-diagonal 
+{
   z-index: 1;
   padding: 1em;
 }
-.other-slant {
+.other-slant 
+{
   position: relative;
   background: #ecc03d;
   color: #fff;
   text-align: center;
-  
 }
-.other-slant:before {
+.other-slant:before 
+{
   position: absolute;
   content:'';
 }
-.other-slant.other-diagonal {
+.other-slant.other-diagonal 
+{
   background: #ecc03d;
 }
 .other-diagonal:before
@@ -499,22 +587,45 @@ html, body
   height: 100%;
   background: inherit;
 }
-
-.slant-2 
+/*=*/
+.bottom-diagonal 
+{
+  z-index: 1;
+  padding: 3em;
+}
+.bottom-slant
 {
   position: relative;
   background: black;
   color: #fff;
   text-align: center;
 }
-.slant-2:before {
+.bottom-slant:before 
+{
   position: absolute;
   content:'';
 }
-.slant-2.diagonal {
+.bottom-slant.bottom-diagonal 
+{
   background: black;
 }
+.bottom-diagonal:before 
+{
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  -webkit-transform-origin: 3% 0;
+  transform-origin: 0% 0%;
+  top: 0;
+  left: -0%;
+  z-index: -1;
+  width: 100%;
+  height: 75%;
+  background: inherit;
+}
 
+/*
+ * screen caps
+================================================================================ */
 .hideme
 {
   opacity: 0;
@@ -522,6 +633,7 @@ html, body
 
 @media only screen and (max-width: 840px)
 {
+
   .crew-button
   {
     text-align: center;
@@ -684,6 +796,17 @@ html, body
   }
 }
 
+@media only screen and (max-width: 450px)
+{
+  .divider
+  {
+    width: 100%;
+    height: 28px;
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}
 
 /* iphone 5 type optimization */
 @media only screen and (max-width: 370px) 
