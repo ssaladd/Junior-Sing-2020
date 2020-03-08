@@ -61,16 +61,6 @@ html, body
 }
 
 /*
- * Nasalization
-================================================================================ */
-@font-face {
-  font-family: "nasal";
-  src: url("assets/nasalization-rg.ttf");
-  font-style: normal;
-  font-weight: normal;
-}
-
-/*
  * space and divisions
 ================================================================================ */
 .divider
@@ -175,7 +165,7 @@ html, body
 ================================================================================ */
 .top 
 {
-  background-image: url("assets/background.png");
+  background-image: url("assets/background.jpg");
   background-repeat: no-repeat;
   background-position: center 30%;
   -webkit-background-size: cover;
@@ -764,7 +754,7 @@ html, body
   z-index: -1;
   width: 120%;
   height: 75%;
-  background-image: url(assets/overlay.png);
+  background-image: url(assets/images/overlay.png);
   background-position: center 70%;
   background-repeat: no-repeat;
   -webkit-background-size: cover;

@@ -1,0 +1,360 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="sub-bar.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="side-bar.css">
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="scripts.js"></script> 
+        <script>
+            $(document).ready(function(){
+              // Add smooth scrolling to all links
+              $("a").on('click', function(event) {
+            
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+            
+                  // Store hash
+                  var hash = this.hash;
+            
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 800, function(){
+               
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+            });
+        </script>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+    </head> 
+    <body>
+        <div class="top">
+            <div class="other-slant other-diagonal">
+                <div class="sheet-music-container">
+                    <img src="assets/images/treble.png" class="treble">
+                    <img src="assets/images/sharp.png" class="sharp">
+                    <div class="vertical-line-1"></div>
+                    <div class="vertical-line-2"></div>
+                    <div class="vertical-line-3"></div>
+
+                    <div class="sheet-music-line-long"></div>
+                    <div class="sheet-music-line-long"></div>
+
+                    <div class="sheet-music-line-short"></div>
+                    <button class="sheet-music-button">
+                        ABOUT
+                    </button>
+                    <button class="sheet-music-button">
+                        CREWS
+                    </button>
+                    <button class="sheet-music-button">
+                        TICKETS
+                    </button>   
+                    <button class="sheet-music-button">
+                        SHOP
+                    </button>  
+                    <div class="sheet-music-line-short"></div>
+
+                    <div class="sheet-music-line-long"></div>
+                    <div class="sheet-music-line-long"></div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-1">
+                    <div class="sing">
+                        SING!
+                        <div class="twentytwenty">
+                            2020
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <a href="#trailertarget"><button class="trailer-button">
+                        TRAILER
+                    </button>
+                </a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="first-slant first-diagonal">
+            <div class="about">
+                <h1>WHAT IS SING?</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit <br />
+                    Aenean nibh velit, sagittis quis lacus ac, eleifend feugiat risus. <br />
+                    Mauris blandit velit diam, ac lacinia leo lobortis sit amet <br />
+                </p>
+            </div>
+
+            <div class="divider">
+                <div class="separator-left"></div>
+                <div class="circle-container">   <div class="circle"></div>  </div>
+                <div class="diamond-container">  <div class="diamond"></div> </div>
+                <div class="circle-container">   <div class="circle"></div>  </div>
+                <div class="separator-right"></div>
+            </div>
+
+            <div class="trailer ">
+                <h1><a id="trailertarget">TRAILER </a> </h1>
+                <p>
+                    Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,  <br />
+                    Lorem ipsum dolor sit amet,Lorem ipsu
+                </p>
+                <div class="trailer-container">
+                    
+                </div>
+            </div>            
+        </div>
+        <div class="slant diagonal">
+            
+            <div class="divider-2">
+                <div class="separator-left"></div>
+                <div class="circle-container">   <div class="circle"></div>  </div>
+                <div class="diamond-container">  <div class="diamond"></div> </div>
+                <div class="circle-container">   <div class="circle"></div>  </div>
+                <div class="separator-right"></div>
+            </div>
+            <div class="crews ">
+                <h1> MEET OUR CREWS </h1>
+                <p>
+                    Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, amet,Lorem i  <br />
+                    Lorem ipsum dolor sit amet,Lorem ipsu amet,Lorem i amet,Lorem i
+                </p>
+
+                <div class="crew-sheet-music-container">
+                    
+                    <!-- two section -->
+
+                    <div class="crew-sheet-row crew-not-hidden">
+                        <div class="vertical-line-1"></div>
+                        <div class="vertical-line-2"></div>
+                        <div class="vertical-line-3"></div>
+
+                        <div class="crew-icon-space"></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-space"></div>
+
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>
+                    </div>
+                    <div class="spacer crew-not-hidden"></div>
+                    <div class="crew-sheet-row crew-not-hidden">
+                        <div class="vertical-line-1"></div>
+                        <div class="vertical-line-2"></div>
+                        <div class="vertical-line-3"></div>
+
+                        <div class="crew-icon-space"></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-space"></div>
+
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>
+                    </div>
+
+                    <!-- three sections -->
+
+                    <div class="crew-sheet-row crew-hidden-1">
+                        <div class="vertical-line-1"></div>
+                        <div class="vertical-line-2"></div>
+                        <div class="vertical-line-3"></div>
+                        
+                        <div class="crew-icon-space"></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-space"></div>
+
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>                        
+                    </div>
+                    <div class="spacer crew-hidden"></div>
+                    <div class="crew-sheet-row crew-hidden-1">
+                        <div class="vertical-line-1"></div>
+                        <div class="vertical-line-2"></div>
+                        <div class="vertical-line-3"></div>
+
+                        <div class="crew-icon-space"></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-space"></div>
+
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>                        
+                    </div>
+                    <div class="spacer crew-hidden"></div>
+                    <div class="crew-sheet-row crew-hidden-1">
+                        <div class="vertical-line-1"></div>
+                        <div class="vertical-line-2"></div>
+                        <div class="vertical-line-3"></div>
+
+                        <div class="crew-icon-space"></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-space"></div>
+                        
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>                        
+                    </div>
+
+                    <!-- four sections -->
+
+                    <div class="crew-sheet-row crew-hidden-2">
+                        <div class="vertical-line-1"></div>
+                        <div class="vertical-line-2"></div>
+                        <div class="vertical-line-3"></div>
+
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>                        
+                    </div>
+                    <div class="spacer crew-hidden"></div>
+                    <div class="crew-sheet-row crew-hidden-2">
+                        <div class="vertical-line-1"></div>
+                        <div class="vertical-line-2"></div>
+                        <div class="vertical-line-3"></div>
+
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>                        
+                    </div>
+                    <div class="spacer crew-hidden"></div>
+                    <div class="crew-sheet-row crew-hidden-2">
+                        <div class="vertical-line-1"></div>
+                        <div class="vertical-line-2"></div>
+                        <div class="vertical-line-3"></div>
+
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>                  
+                    </div>             
+                    <div class="spacer crew-hidden"></div>
+                    <div class="crew-sheet-row crew-hidden-2">
+                        <div class="vertical-line-1"></div>
+                        <div class="vertical-line-2"></div>
+                        <div class="vertical-line-3"></div>
+
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+                        <div class="crew-icon-wrapper"><div class="crew-icon"></div></div>
+
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>
+                        <div class="sheet-music-line-long"></div>                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="bottom-slant bottom-diagonal">
+            <div class="row">
+                <div class="footer">
+                    <h1>JR <span>SING!</span> 20</h1>
+                    <div class="footer-keyboard-container">
+                        <div class="keyboard-top">
+                            <div class="keyboard-white-1-l"></div>
+                            <div class="keyboard-black"></div>
+                            <div class="keyboard-white-2"></div>
+                            <div class="keyboard-black"></div>
+                            <div class="keyboard-white-2"></div>
+                            <div class="keyboard-black"></div>
+                            <div class="keyboard-white-1-r"></div>
+                        </div>
+                        <div class="keyboard-bottom">
+                            <div class="keyboard-white"></div>
+                            <div class="keyboard-white">
+                                <img src="assets/icons/icon-fb.png">
+                            </div>
+                            <div class="keyboard-white">
+                                <img src="assets/icons/icon-ig.png">
+                            </div>
+                            <div class="keyboard-white"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var scroll = new SmoothScroll('a[href*="#"]');
+        </script>
+    </body>
+
+</html>
