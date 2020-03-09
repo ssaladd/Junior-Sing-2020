@@ -73,6 +73,8 @@ html, body
 }
 .divider-2
 {
+  position: relative;
+  top: -15px;
   width: 50%;
   height: 28px;
   margin: auto;
@@ -460,14 +462,26 @@ html, body
 }
 .trailer-container
 {
-  padding-top: 20px;
+  padding: 10px 10px 10px 10px;
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 34px;
   border-radius: 6px;
-  width: 90%;
+  width: 734px;
   height: 420px;
   color: black;
   background-color: #f9f9f9;
+}
+.trailer-container iframe
+{
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+}
+.trailer-container video
+{
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
 }
 
 /*
@@ -875,6 +889,21 @@ html, body
   }
 } */
 
+@media only screen and (max-width: 800px)
+{
+  .trailer-container
+  {
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    width: 100%;
+    height: 24%;
+    color: black;
+    background-color: #f9f9f9;
+  }
+}
 @media only screen and (max-width: 720px) 
 {
   .crew-sheet-row
@@ -930,17 +959,6 @@ html, body
     height: 360px;
     margin: auto;
     margin-bottom: 36px;
-    background-color: #f9f9f9;
-  }
-  .trailer-container
-  {
-    padding-top: 20px;
-    margin: auto;
-    margin-bottom: 20px;
-    border-radius: 6px;
-    width: 100%;
-    height: 420px;
-    color: black;
     background-color: #f9f9f9;
   }
   .treble
@@ -1001,7 +1019,6 @@ html, body
     background-color: #f9f9f9;
   }
 }
-
 /* pretty small phones */
 @media only screen and (max-width: 500px) 
 {
@@ -1042,7 +1059,6 @@ html, body
     background-color: #f9f9f9;
   }
 }
-
 @media only screen and (max-width: 450px)
 {
   .divider
@@ -1072,7 +1088,6 @@ html, body
     background-color: black;
   }
 }
-
 /* iphone 5 type optimization */
 @media only screen and (max-width: 370px) 
 {
